@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>
         Example
@@ -9,25 +8,25 @@
 </head>
 
 <body>
-    <div class="site-header">
-        <p class="site-title">Turtle Ipsum</p>
+    <header class="site-header" aria-label="사이트 헤더">
+        <h1 class="site-title">Turtle Ipsum</h1>
         <p class="site-subtitle">The World's Premier Turtle Fan Club</p>
-    </div>
-    <div class="main-nav">
-        <p class="nav-header">Resources</p>
-        <div class="nav-list">
-            <p class="nav-item nav-item-bull"><a href="https://www.youtube.com/watch?v=CMNry4PE93Y">"I like turtles"</a>
-            </p>
-            <p class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtle">Basic Turtle Info</a></p>
-            <p class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)">Chocolate
-                    Turtles</a></p>
-        </div>
-    </div>
-    <div class="main-content">
-        <div>
-            <p class="page-title">Welcome to Turtle Ipsum.
-                <a href="">Click here</a> to learn more.
-            </p>
+    </header>
+    <nav class="main-nav" aria-label="메인 네비게이터">
+        <h2 class="nav-header">Resources</h2>
+        <ul class="nav-list">
+            <li class="nav-item nav-item-bull"><a href="https://www.youtube.com/watch?v=CMNry4PE93Y">"I like turtles"</a>
+            </li>
+            <li class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtle">Basic Turtle Info</a></li>
+            <li class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)">Chocolate
+                    Turtles</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section>
+            <h2 class="page-title">Welcome to Turtle Ipsum.
+                <a href="#">Click here</a> to learn more.
+            </h2>
             <p class="article-text">
                 Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -35,23 +34,27 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum
             </p>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="footer-section">
-            <span class="button">Sign up for turtle news</span>
-        </div>
-        <div class="footer-section">
-            <p class="nav-header footer-title">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer-section">
+            <button class="button">Sign up for turtle news</button>
+        </section>
+        <section class="footer-section">
+            <h2 class="nav-header footer-title">
                 Internal Pages
-            </p>
-            <div class="nav-list">
-                <p class="nav-item nav-item-bull"><a href="../">Index</a></p>
-                <p class="nav-item nav-item-bull"><a href="../semantic">Semantic Example</a></p>
-            </div>
-        </div>
+            </h2>
+            <ul class="nav-list">
+                <li class="nav-item nav-item-bull"><a href="../">Index</a></li>
+                <li class="nav-item nav-item-bull"><a href="../semantic">Semantic Example</a></li>
+            </ul>
+        </section>
+        <section class="footer-section">
+            <img src="../assets/turtle.png" alt="Turtle" class="footer-image">
+        </section>
         <p class="footer-copyright">&copy; 2016 Instrument</span>
-    </div>
+    </footer>
 </body>
 
 </html>
