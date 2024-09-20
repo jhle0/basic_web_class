@@ -9,6 +9,36 @@
 </head>
 
 <body>
+    <div id="intro"></div>
+    
+    <script>
+        function introduce1() {
+            return "안녕하세요, 저는 프론트개발자 이정현입니다.";
+        }
+
+        function introduce2() {
+            return "안녕하세요, 저는 백앤드 개발자 이정현입니다.";
+        }
+
+        function introduce3() {
+            return "안녕하세요, 저는 인공지능 개발자 이정현입니다.";
+        }
+
+        const introductions = [introduce1, introduce2, introduce3];
+
+        let currentIndex = 0;
+        function updateIntroduction() {
+            const introElement = document.getElementById('intro');
+            introElement.textContent = introductions[currentIndex]();
+            currentIndex = (currentIndex + 1) % introductions.length;
+        }
+
+        setInterval(updateIntroduction, 3000);
+
+        updateIntroduction();
+    </script>
+
+    
     <div class="site-header">
         <p class="site-title">Turtle Ipsum</p>
         <p class="site-subtitle">The World's Premier Turtle Fan Club</p>
