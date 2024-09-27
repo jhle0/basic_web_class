@@ -42,10 +42,19 @@ let cardThree = 7;
 sum += cardThree;
 console.log(`You have ${sum} points`);
 
-if (sum > 21) {
+
+if (sum === 21) {
+    console.log('Blackjack! You win!');
+} else if (sum > 21) {
     console.log('You lost');
 } else {
     let bankSum = cardOneBank + cardTwoBank + cardThreeBank + cardFourBank;
+
+    if (bankSum < 17) {
+        let cardFiveBank = 5;
+        bankSum += cardFiveBank;
+    }
+
     console.log(`Bank has ${bankSum} points`);
 
     if (bankSum > 21) {
@@ -58,4 +67,3 @@ if (sum > 21) {
         console.log('It\'s a Draw');
     }
 }
-
