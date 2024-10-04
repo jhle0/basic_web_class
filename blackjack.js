@@ -29,8 +29,7 @@
 // 5. 21점을 초과한 쪽이 무조건 패배.
 
 
-
-let cardOne = 7;
+let cardOne = 9;
 let cardTwo = 5;
 let sum = cardOne + cardTwo;
 let cardOneBank = 7;
@@ -42,10 +41,18 @@ let cardThree = 7;
 sum += cardThree;
 console.log(`You have ${sum} points`);
 
-if (sum > 21) {
+if (sum === 21) {
+    console.log('Blackjack! You win!');
+} else if (sum > 21) {
     console.log('You lost');
 } else {
     let bankSum = cardOneBank + cardTwoBank + cardThreeBank + cardFourBank;
+
+    if (bankSum < 17) {
+        let cardFiveBank = 5;
+        bankSum += cardFiveBank;
+    }
+
     console.log(`Bank has ${bankSum} points`);
 
     if (bankSum > 21) {
@@ -58,4 +65,3 @@ if (sum > 21) {
         console.log('It\'s a Draw');
     }
 }
-
