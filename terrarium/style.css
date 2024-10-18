@@ -99,7 +99,7 @@ h1 {
 
 .plant-holder {
     position: relative;
-    height: 11%;
+    height: 12%;
     /* left: -10px; */
     margin-left: 10%;
     margin-bottom: 15%;
@@ -109,17 +109,18 @@ h1 {
 .plant {
     position: absolute;
     max-width: 100%;
-    max-height: 130%;
-    z-index: 2;
-    animation: grow 5s infinite;
+    max-height: 110%;
+    /* z-index: 2; */
+    /* border: solid 3px #3670cdb4; */
+    /* animation: grow 5s infinite; */
 }
 
-.plant-holder:hover {
+/* .plant-holder:hover {
     transform: scale(1.1);
-}
+} */
 
 
-@keyframes grow {
+/* @keyframes grow {
     0% {
         transform: scale(1);
     }
@@ -131,4 +132,4 @@ h1 {
     100% {
         transform: scale(1);
     }
-}
+} */
