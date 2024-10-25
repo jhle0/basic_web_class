@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+#quote {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+#typed-value {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.highlight {
+    background-color: rgb(145, 254, 27);
+}
+
+.error {
+    background-color: lightcoral;
+    border: 1px solid red;
+}
